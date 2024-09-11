@@ -1,7 +1,7 @@
 baseURL: 'https://about-qa.aspose.ai/'
 languageCode: 'en-us'
 title: 'About Us | Aspose.AI'
-theme: "about_common_theme"
+theme: "doctheme"
 paginate: 10
 enableRobotsTXT: true
 enableRedirects: true

@@ -1,4 +1,4 @@
-name: github-pages
+name: github-pages # Workflow name
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
   deploy:
     runs-on: macos-latest
     steps:
-      - name: Checkout about repo
+      - name: Checkout about repo # Step name
         uses: actions/checkout@main
         with:
           repository: Aspose/about-qa.aspose.ai
@@ -19,13 +19,13 @@ jobs:
           #submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup Hugo
+      - name: Setup Hugo # Step name
         uses: peaceiris/actions-hugo@v2.4.13
         with:
           hugo-version: '0.101.0'
           extended: true
       
-      - name: Build
+      - name: Build # Step name
         run: hugo --config "config.yml" --cleanDestinationDir --minify
     
       - name: Deploy About to S3

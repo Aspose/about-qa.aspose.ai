@@ -1,5 +1,5 @@
 ---
-title: File a Complaint - About - aspose.ai
+title: File a Complaint - About - products.aspose.ai
 
 singlepageh1title: File a Complaint
 
@@ -7,11 +7,9 @@ linktitle: complaint
 draft: false
 weight: 1
 menu:
-   sidebarmenu: 
-       name: File a Complaint
-       pre: fa-class
-
-
+  sidebarmenu:
+    name: File a Complaint
+    pre: fa-class
 ---
 
 <div class="box1">

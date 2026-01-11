@@ -33,7 +33,7 @@ jobs:
       # Delete files in destination that don't exist in source directory
       - name: Sync files to Ceph-based S3 # compatible storage system
         run: | # Executes the following shell command. Syncs the local ./public/ directory with the s3 bucket named qa-about-aspose.ai
-            aws s3 sync ./public/ s3://qa-about-aspose.ai/ \
+            aws s3 sync ./public/ s3://qa-about-aspose-ai/ \
             --endpoint-url https://s3-qa.dynabic.com \
             --acl public-read \
             --delete
